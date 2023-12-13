@@ -21,10 +21,14 @@
                             <div class="content todolistbox border border-black rounded-3">
                                 <ul class="list-unstyled">
                                     <li v-for="(todo, index) in todolist" :key="index">
-                                        <div class="todo align-items-center">
-                                            <p :class="{'done': !todo.done}">
-                                                {{ todo.todo }}
-                                            </p>
+                                        <div>
+                                            <div class="todo d-flex align-items-center" :class="{'done': !todo.done}">
+                                                <span class="spantodo">{{ todo.todo }}</span>
+                                                    
+                                                <div class="d-flex justify-content-end buttons" @click="remove(index)">
+                                                    <button class="btn-remove float-end"><i class="fa-solid fa-xmark"></i></button>
+                                                </div>
+                                            </div>
                                             <hr v-if="index !== todolist.length - 1">
                                         </div>
                                     </li>
