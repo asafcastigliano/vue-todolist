@@ -13,6 +13,29 @@
     
     <div id="app">
 
+        <header class="text-center">
+            <h1 class="pt-1 pb-2">TODO LIST</h1>
+        </header>
+        <main>
+            <section class="todolist">
+                <div class="container">
+                    <div class="row justify-content-center d-flex">
+                        <div class="col-9">
+                            <div class="content todolistbox border border-black rounded-3">
+                                <ul>
+                                    <li v-for="todolist in todolist" :key="index">
+                                        <div class="todo">
+                                            {{ todolist.todo }}
+                                        </div>
+                                    </li>
+                                  </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
     </div>
 
     <script type="text/javascript" src="https://unpkg.com/vue@3"></script>
