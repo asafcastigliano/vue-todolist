@@ -3,6 +3,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
+            inputText: '',
             todolist: [
                 {
                     todo: "Scendere il cane",
@@ -19,6 +20,13 @@ createApp({
     methods: {
         remove(index){
             this.todolist.splice(index, 1);
+        },
+
+        addTodo() {
+            if (this.inputText.trim() !== '') {
+                this.todolist.push({ todo: this.inputText, done: false });
+                this.inputText = '';
+              }
         }
 
     }
