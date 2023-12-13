@@ -10,13 +10,13 @@ createApp({
                 },
                 {
                     todo: "Pisciare il cane",
-                    done: false
+                    done: true
                 },
             ]
         }
     },
 
     methods: {
-
+        
     }
 }).mount('#app');

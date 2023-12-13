@@ -14,5 +14,17 @@ header{
 }
 
 .todo{
-    
+    height: 50px;
+}
+
+.done{
+    text-decoration: line-through;
+}
+
+.add-border{
+    border-bottom: 1px solid gray;
+}
+
+p{
+    margin-left: 10px;
 }
