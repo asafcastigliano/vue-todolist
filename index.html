@@ -25,11 +25,12 @@
                                             <div class="todo d-flex align-items-center" :class="{'done': todo.done}">
                                                 <span class="spantodo">{{ todo.todo }}</span>
                                                     
-                                                <div class="d-flex justify-content-end buttons" @click="remove(index)">
-                                                    <button class="btn-remove"><i class="fa-solid fa-xmark"></i></button>
+                                                <div class="d-flex justify-content-end buttons">
+                                                    <button class="btn-remove btn-base" @click="remove(index)"><i class="fa-solid fa-xmark"></i></button>
+                                                    <button class="btn-done btn-base" @click="done(index)"><i class="fa-solid fa-check"></i></button>
                                                 </div>
                                             </div>
-                                            <hr>
+                                            <hr class="m-0">
                                         </div>
                                     </li>
                                 </ul>

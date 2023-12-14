@@ -22,6 +22,10 @@ createApp({
             this.todolist.splice(index, 1);
         },
 
+        done(index){
+            this.todolist[index].done = true;
+        },
+
         addTodo() {
             if (this.inputText.trim() !== '') {
                 this.todolist.push({ todo: this.inputText, done: false });

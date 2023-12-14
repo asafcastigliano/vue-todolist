@@ -36,10 +36,18 @@ p{
 
 .btn-remove{
     background-color: red;
+    margin-right: 5px;
+}
+
+.btn-base{
     color: white;
     padding: 5px 10px 5px 10px;
     border: none;
     border-radius: 20px;
+}
+
+.btn-done{
+    background-color: green;
 }
 
 .buttons{
